@@ -1,8 +1,8 @@
 Package: RHomework
 Title: What the Package Does (one line, title case)
 Version: 0.0.0.9000
-Authors@R: person("First", "Last", email = "first.last@example.com", role = c("aut", "cre"))
-Description: What the package does (one paragraph).
+Authors@R: person("Grégoire", "Virepinte", email = "gregoire.virepinte@hec.edu", role = c("aut", "cre"))
+Description: These are some of the functions that we have coded in R so far.
 Depends: R (>= 3.4.1)
 License: What license is it under?
 Encoding: UTF-8
