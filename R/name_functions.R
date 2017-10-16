@@ -1,22 +1,12 @@
-library(prenoms)
-library(ggplot2)
-library(dplyr)
-library(dygraphs)
-library(tidyr)
-library(assertthat)
-data(prenoms)
-
 #' Draw a name
 #'
 #' @param the_name Name searched
 #' @param the_sex Sex searched
 #'
 #' @return Returns a graph with the number of times the name was given every year since 1900
-#' @import(prenoms)
-#' @import(ggplot2)
-#' @import(dplyr)
-#' @import(dygraphs)
-#' @import(tidyr)
+#' @import tidyverse
+#' @import assertthat
+#' @import prenoms
 #' @export
 #'
 #' @examples
@@ -39,11 +29,9 @@ draw_a_name <- function(the_name, the_sex) {
 #' @param the_names Names searched (vector form)
 #'
 #' @return Returns a graph with the number of times each name was given every year since 1900
-#' @import(prenoms)
-#' @import(ggplot2)
-#' @import(dplyr)
-#' @import(dygraphs)
-#' @import(tidyr)
+#' @import tidyverse
+#' @import assertthat
+#' @import prenoms
 #' @export
 #'
 #' @examples
@@ -60,5 +48,4 @@ draw_names <- function(the_names) {
            summarise(n = sum(n)) %>%
            ggplot(aes(x = year, y = n, color = name)) +
            geom_line())
-
 }

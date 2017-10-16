@@ -4,10 +4,11 @@
 #'
 #' @return The full path of the csv where this dataset has been saved
 #' @import tidyverse
+#' @import readxl
+#' @import assertthat
 #' @export
 #'
 #' @examples
-
 save_as_csv <- function(dataset, filename) {
 
   assert_that(grepl(".csv", filename))
@@ -16,7 +17,6 @@ save_as_csv <- function(dataset, filename) {
 
   dataset %>% write.csv2(filename)
   return(normalizePath(filename))
-
 }
 
 
@@ -25,12 +25,12 @@ save_as_csv <- function(dataset, filename) {
 #' @param folderpath The path of the folder
 #'
 #' @return A list of all the csv files contained in the folder
-#' @import(tidyr)
-#' @import(readxl)
+#' @import tidyr
+#' @import readxl
+#' @import assertthat
 #' @export
 #'
 #' @examples
-
 my_csv_reader <- function(folderpath) {
 
   assert_that(dir.exists(folderpath))
@@ -40,8 +40,6 @@ my_csv_reader <- function(folderpath) {
     csv_list[[length(csv_list)+1]] <- read.csv2(item)
   }
   return(csv_list)
-
-
 }
 
 
