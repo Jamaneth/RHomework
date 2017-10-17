@@ -1,13 +1,15 @@
 Package: RHomework
-Title: What the Package Does (one line, title case)
+Title: A list of functions for homework
 Version: 0.0.0.9000
 Authors@R: person("Grégoire", "Virepinte", email = "gregoire.virepinte@hec.edu", role = c("aut", "cre"))
 Description: These are some of the functions that we have coded in R so far.
 Depends: R (>= 3.4.1)
-License: What license is it under?
+License: 
 Encoding: UTF-8
 LazyData: true
 RoxygenNote: 6.0.1
 Imports: tidyverse,
     readxl,
-    prenoms
+    prenoms,
+    magrittr,
+    assertthat

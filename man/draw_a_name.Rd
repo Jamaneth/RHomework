@@ -18,5 +18,5 @@ Returns a graph with the number of times the name was given every year since 190
 Draw a name
 }
 \examples{
-draw_a_name("Vincent", "M")
+
 }

@@ -15,6 +15,3 @@ Returns a graph with the number of times each name was given every year since 19
 \description{
 Draw names
 }
-\examples{
-draw_names(c("Vincent", "Diane"))
-}

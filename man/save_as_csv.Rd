@@ -8,10 +8,15 @@ save_as_csv(dataset, filename)
 }
 \arguments{
 \item{dataset}{A dataset, basically}
+
+\item{filename}{The path of the file}
 }
 \value{
 The full path of the csv where this dataset has been saved
 }
 \description{
 save_as_csv
+}
+\examples{
+save_as_csv(iris, "iris.csv")
 }

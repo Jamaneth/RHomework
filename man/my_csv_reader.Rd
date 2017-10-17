@@ -15,3 +15,6 @@ A list of all the csv files contained in the folder
 \description{
 My csv reader
 }
+\examples{
+my_csv_reader("~/Documents/")
+}

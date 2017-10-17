@@ -5,12 +5,13 @@
 #'
 #' @return Returns a graph with the number of times the name was given every year since 1900
 #' @import tidyverse
+#' @import magrittr
 #' @import assertthat
 #' @import prenoms
-#' @export
 #'
 #' @examples
-#' draw_a_name("Vincent", "M")
+#'
+#' @export
 
 draw_a_name <- function(the_name, the_sex) {
 
@@ -30,12 +31,12 @@ draw_a_name <- function(the_name, the_sex) {
 #'
 #' @return Returns a graph with the number of times each name was given every year since 1900
 #' @import tidyverse
+#' @import magrittr
 #' @import assertthat
 #' @import prenoms
 #' @export
 #'
 #' @examples
-#' draw_names(c("Vincent", "Diane"))
 
 draw_names <- function(the_names) {
 
